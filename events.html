@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="document.getElementById('time').innerHTML=Date()">Display Time</button>
+
+<button onmouseover="document.getElementById('new').innerHTML=Date()">Display Time</button>
+
+<input type="text" onkeypress="document.getElementById('input').innerHTML=Date()">Time
+
+<input type="text" id="input" oninput="myName()">
+
+<p id="new"></p>
+
+
+
+<p id="time"></p>
+<p id="new"></p>
+<p id="input"></p>
+
+<script>
+    function myName() {
+  var x = document.getElementById("input").value;
+  document.getElementById("new").innerHTML = "Text: " + x;
+}
+</script>
+
+</body>
+</html>
